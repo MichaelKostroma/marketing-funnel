@@ -16,10 +16,13 @@ export function Header() {
   const enableBackButton = pathname !== "/";
 
   const handleBackClick = () => {
-    if (pathname === ROUTES.PRICING) {
-      router.push(ROUTES.QUIZ_CONTACT);
-    } else {
-      router.back();
+    switch (pathname) {
+      case ROUTES.PRICING:
+        return router.push(ROUTES.QUIZ_CONTACT);
+      case ROUTES.QUIZ_CONTACT:
+        return router.push(ROUTES.HOME);
+      default:
+        return router.back();
     }
   };
 
@@ -38,7 +41,7 @@ export function Header() {
 
       <h1 className="text-dark-blue text-lg font-bold">App</h1>
 
-      <Button onClick={handleBackClick} variant="ghost" aria-label="Open menu">
+      <Button variant="ghost" aria-label="Open menu">
         <BurgerIcon />
       </Button>
     </header>
