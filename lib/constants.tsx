@@ -6,10 +6,10 @@ export const ROUTES = {
 } as const;
 
 export const PROGRESS_ITEMS = [
-  { id: 1, text: "Aligning with your goals", completed: true },
-  { id: 2, text: "Reviewing your answers", completed: true },
-  { id: 3, text: "Picking Bible verses and prayers for you", completed: true },
-  { id: 4, text: "Finalizing your personalized plan", completed: false },
+  { id: 1, text: "Aligning with your goals" },
+  { id: 2, text: "Reviewing your answers" },
+  { id: 3, text: "Picking Bible verses and prayers for you" },
+  { id: 4, text: "Finalizing your personalized plan" },
 ];
 
 export const PRICING_PLANS = [

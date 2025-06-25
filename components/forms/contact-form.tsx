@@ -78,6 +78,7 @@ export function ContactForm() {
           }`}
           placeholder=""
           aria-describedby={errors.email ? "email-error" : undefined}
+          suppressHydrationWarning
         />
 
         {errors.email && (
