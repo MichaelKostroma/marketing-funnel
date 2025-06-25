@@ -1,35 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌱 Spiritual Growth Marketing Funnel
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-15.3.4-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React](https://img.shields.io/badge/React-19.0.0-blue?style=for-the-badge&logo=react)](https://react.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-First, run the development server:
+A modern, conversion-optimized marketing funnel for spiritual growth services. This application guides users through an interactive quiz experience, collects their contact information, and delivers personalized spiritual growth plans.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Getting Started
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Prerequisites
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js 18.x or higher
+- npm
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Installation
 
-## Learn More
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:yourusername/marketing-funnel.git
+   cd marketing-funnel
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-## Docker
+## 🐳 Docker
+
+For containerized deployment:
 
 ```bash
 # Build the Docker image
@@ -41,8 +49,21 @@ docker run -p 3000:3000 marketing-funnel
 
 The application will be available at [http://localhost:3000](http://localhost:3000).
 
-## Deploy on Vercel
+## 🧪 A/B Testing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project includes a basic A/B testing concept with two approaches:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Custom Feature Flags + Middleware Analytics**: Using cookies to assign variants and middleware to track analytics
+2. **GrowthBook Integration**: Using the open-source GrowthBook platform for more robust A/B testing
+
+For more details, see the [A/B Testing Approach](AB_TESTING_APPROACH.md) documentation.
+
+## 🛠️ Technologies Used
+
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **UI Library**: [React 19](https://react.dev/)
+- **Styling**: [TailwindCSS 4](https://tailwindcss.com/)
+- **UI Components**: [Radix UI](https://www.radix-ui.com/)
+- **Language**: [TypeScript 5](https://www.typescriptlang.org/)
+- **Containerization**: [Docker](https://www.docker.com/)
+- **Code Quality**: ESLint, Prettier
